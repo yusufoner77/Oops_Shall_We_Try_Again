@@ -22,7 +22,7 @@ int prompt(std::string input, std::string error, int lowerBound = -500, int uppe
 }
 
 int main() {
-	int value = prompt("Please enter an integer", "Your value is invalid", 0, 100);
-    std::cout << "The value chosen by the user is " << value << std::endl;
+	int promptValue = prompt("Please enter an integer", "Your value is invalid", 0, 100);
+    std::cout << "The value chosen by the user is " << promptValue << std::endl;
     return 0;
 }

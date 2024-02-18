@@ -18,8 +18,13 @@ string prompt(string intro, string error, int lowerBound = -500, int upperBound 
 	}
 
 	if (value == "exit") {
+		cout << "Leaving the menu..." << endl;
 		exit(0);
 	}
+
+	/* I chose to use exit(0) to terminate the function immediately. If the user enters "exit" then my program will print out "leaving the menu..."
+	and terminate the program gracefully. The function will not return anything aside from that message. I chose exit(0) instead of exit(1) because
+	it was an intentional termination, so I would consider that successful.*/
 	
 	// lowerBound is smallest valid integer, defaults to -500 if not specified
 	// upperBound is largest valid integer, defaults to 500 if not specified
